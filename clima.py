@@ -5,7 +5,7 @@ import os
 def analizar_clima(ruta_csv):
     df = pd.read_csv(ruta_csv)
     
-    # 1. Cálculos actuales
+    # 1. Cálculos actuales (mean suma y divide internamente)
     media = df['Mean'].mean()
     print(f"--- REPORTE ESCENARIO A ---")
     print(f"Media anual global: {media:.2f}")
